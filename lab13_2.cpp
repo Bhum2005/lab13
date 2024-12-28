@@ -42,7 +42,7 @@ void updateImage(bool ima[N][M],int s,int x,int y){
     for(int i=0;i<N;i++){
         for(int j=0;j<M;j++){
             double dat;
-            dat=pow(pow(i-x,2)+pow(j-y,2),1/2);
+            dat=pow(pow(i-x,2)+pow(j-y,2),0.5);
             if(dat<=s-1){
                 ima[i][j]=1;
             }
